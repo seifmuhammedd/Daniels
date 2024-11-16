@@ -1,0 +1,548 @@
+html {
+    scroll-padding: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* NavBAr CSS */
+.navbar .navbar-brand {
+    letter-spacing: 1px;
+}
+
+.navbar .collapse .navbar-nav a {
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+    padding-left: 0;
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: "";
+    border-bottom: 2px solid black;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 0%;
+    transition: width 0.2s;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 85%;
+}
+
+.navbar .collapse .navbar-nav .active {
+    position: relative;
+    padding-left: 0;
+}
+
+.navbar .collapse .navbar-nav .active::after {
+    content: "";
+    border-bottom: 2px solid black;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 85%;
+}
+
+/* Home CSS */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0 100%), url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home .home-content h5 {
+    font-size: 50px;
+}
+
+.home .home-content h1 {
+    font-size: 60px;
+    margin-block: 30px;
+}
+
+.home .home-content .special {
+    font-weight: 400;
+}
+
+.home .home-content .home-links {
+    display: flex;
+}
+
+.home .home-links span {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About CSS */
+.about .left-content span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about .left-content p {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.about .left-content .name {
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.progress,
+.progress-stacked {
+    height: 1.8rem;
+}
+
+.special-0 {
+    position: relative;
+}
+
+.special-0::after {
+    content: "Web Design";
+    position: absolute;
+    left: 2%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.special-0::before {
+    content: "95%";
+    position: absolute;
+    right: 1%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.special-i {
+    position: relative;
+}
+
+.special-i::after {
+    content: "Branding";
+    position: absolute;
+    left: 2%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.special-i::before {
+    content: "80%";
+    position: absolute;
+    right: 1%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.special-ii {
+    position: relative;
+}
+
+.special-ii::after {
+    content: "Development";
+    position: absolute;
+    left: 2%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.special-ii::before {
+    content: "90%";
+    position: absolute;
+    right: 1%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-dark:hover {
+    background-color: white;
+    color: black;
+}
+
+.about .left-content {
+    position: relative;
+}
+
+.about .left-content::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: -30px;
+    left: -20px;
+    z-index: -1;
+}
+
+/* Services CSS */
+
+.services .title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    position: relative;
+    z-index: 2;
+}
+
+.services .title {
+    position: relative;
+}
+
+.services .title::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.services .inner span {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: black;
+    background-color: #F7F7F7;
+    transition: all 0.3s;
+}
+
+.services .inner:hover span {
+    background-color: black;
+    color: white;
+}
+
+/* Portfolio CSS */
+
+.portfolio .title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio .title {
+    position: relative;
+}
+
+.portfolio .title::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.inner {
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #FCFCFC;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 0.5s;
+}
+
+.inner:hover .layer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.inner:hover h6,
+.inner:hover span {
+    transform: translateY(0);
+}
+
+.layer h6 {
+    transform: translateY(-150%);
+    transition: all 0.7s;
+    letter-spacing: 1px;
+}
+
+.layer span {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    transform: translateY(50%);
+    transition: all 0.7s;
+}
+
+.modal-dialog {
+    max-width: 700px;
+}
+
+.nav-pills .nav-link {
+    position: relative;
+}
+
+.nav-pills .nav-link::after {
+    content: "";
+    border-bottom: 3px solid black;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0%;
+    transition: all 0.2s;
+}
+
+.nav-pills .nav-link:hover::after {
+    width: 85%;
+}
+
+
+.nav-pills .nav-link.active {
+    position: relative;
+    background-color: transparent;
+}
+
+.nav-pills .nav-link.active::after {
+    content: "";
+    border-bottom: 3px solid black;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 85%;
+}
+
+/* Testimonials CSS */
+
+.testimonials .title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials .title {
+    position: relative;
+}
+
+.testimonials .title::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.slider .carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* Team CSS */
+
+.team .title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    position: relative;
+    z-index: 2;
+}
+
+.team .title {
+    position: relative;
+}
+
+.team .title::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .card .card-body {
+    background-color: #5B5B5B;
+}
+
+.team .card .card-body h4 {
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.team .card .card-body h5 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.team .card {
+    position: relative;
+    overflow: hidden;
+}
+
+.team .card .card-img {
+    overflow: hidden;
+}
+
+.team .overlay {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 102px;
+    left: 5px;
+    background-color: #FFFDFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    transition: all 0.5s;
+
+}
+
+.team .card:hover .overlay {
+    opacity: 0.9;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+.team .overlay span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: 2px solid black;
+    transition: all 0.5s;
+}
+
+.team .overlay span:hover {
+    color: black;
+    background-color: white;
+}
+
+.team .card img {
+    transition: transform 0.5s;
+}
+
+.team .card .card-img:hover img {
+    transform: scale(1.2);
+}
+
+/* Contact CSS */
+
+.contact .title h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    color: rgb(52, 52, 52);
+    position: relative;
+    z-index: 2;
+}
+
+.contact .title {
+    position: relative;
+}
+
+.contact .title::after {
+    content: "";
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact .inner span {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.contact .inner span:hover {
+    color: white;
+    background-color: black;
+}
+
+.bg-special {
+    background-color: #F4F4F4;
+}
+
+.form-control,
+.form-control:focus {
+    background-color: #F4F4F4;
+    border: none;
+    box-shadow: none;
+}
+
+/* Footer CSS */
+
+footer {
+    background-color: #1C1C1C;
+}
